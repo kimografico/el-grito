@@ -1,0 +1,69 @@
+sponsors:
+  heroTitle: "Rewards"
+  title: "SPONSOR THE DOCUMENTARY PROJECT"
+  subtitle: "El Grito"
+  description: |
+    Receive a warm greeting from those of us who are part of the EL GRITO – BIOTOX project, a documentary series focused on the Environment, where through art and science we will try to generate a center of debate on Climate Change.
+
+    Through this letter, I am pleased to extend a cordial invitation to participate in this macro project EL GRITO – BIOTOX. We want you to be part of this great dream, and through partnerships we can strengthen collaborative ties that allow the completion of this project.
+
+    With your support, we could obtain the funds for EL GRITO, or generate alliances with partner companies that share these specialties and environmental philosophy or care for the environment.
+  sustainabilityTitle: "How to know if your association or company meets our values?"
+  sustainabilityIntro: |
+    We need sustainable companies that meet these requirements:
+
+    A sustainable company is a business that not only aspires to maximize its economic benefit, but also its positive impact on society and the environment.
+
+    That is why it is said that sustainable companies are those that do not just seek their economic benefit and that's it, but maximize a triple bottom line.
+
+    Therefore, the main requirements to consider a company sustainable would be:
+  sustainabilityAreas:
+    - title: "Optimize economic benefit"
+      description: "as it has always been in companies."
+      icon: "/images/decorative/opt-economico.png"
+    - title: "Optimize social benefit"
+      description: "creating a positive impact on society, contributing to its progress, its wealth, and its well-being."
+      icon: "/images/decorative/opt-social.png"
+    - title: "Optimize environmental benefit"
+      description: "first of all, minimizing or eliminating any ecological harm they cause."
+      icon: "/images/decorative/opt-medioambiental.png"
+  sustainabilityBody: |
+    COMPANIES
+    From there, they can maximize their "environmental bottom line," actively contributing to improving the conditions of the environment that surrounds us.
+
+    When a company meets all three requirements at the same time, it can be considered sustainable.
+    It is important that the effort is joint on all three fronts. If a company seeks its economic benefit and eliminates its negative environmental impact, but still does not contribute to social benefit (for example, providing low wages and carrying out labor exploitation) it is not considered sustainable.
+  testButton: "Take our suitability test!"
+  legislationTitle: "Legislation on sustainable companies in Spain:"
+  legislationText: |
+    The concept of a sustainable company is not something rigid, under a strict law that grants official labels. However, it is true that the concept of sustainable development and social responsibility has been integrated into our legislation.
+    Thus, to promote sustainability in business activity, we find all kinds of laws in Spain. These are some of them:
+  legislationLaws:
+    - "Law 2/2011 of March 4 on Sustainable Economy."
+    - "Law 26/2007 on Environmental Responsibility."
+    - "Labor laws that contribute to improving social welfare. Two examples are the laws on family and work reconciliation or the organic law for effective equality between men and women."
+  legislationExtra: "In addition to those laws, there are other regulations, such as ISO standards, which establish quality and sustainability criteria in company performance. But not only sustainable companies have made their way into legislation; they have also done so in society."
+  participationTitle: "COMPANIES can participate as:"
+  participationTypes:
+    - title: "Sponsors"
+      content: "It is an agreement between a channel or production company and a company, within the framework of a contract for the emission of advertising spots, mentions, digital banners of a brand of a television program in exchange for economic consideration."
+    - title: "Patrons"
+      content: "It is an economic agreement that emphasizes a specific positioning of the same, associating it with an activity of certain prestige.\n\nThese are super exclusive contracts with various conditions where the image of a company or institution is cared for in front of public opinion."
+    - title: "Product Placement"
+      content: "In the case of the El Grito project, it is an advertising strategy and a great source of audiovisual financing that consists of inserting the brand of an audiovisual product in order to give it advertising in exchange for remuneration. Placing a product within your production. Regarding the company's investment, the value will be diagnosed. E.g., if the company requires appearing in a single episode or in several."
+  exchangeTitle: "Exchanges"
+  exchangeDescription: |
+    It consists of exchanging mentions or logos, acknowledgments, etc., for services or products. The most common are: hairdressers, gyms, clothes for actors, makeup, stylists, cosmetic products, photographic equipment, lighting, garments, catering, and transportation for the team.
+    All products must be sustainable.
+  exchangeExamples:
+    - "Travel agencies that fund transfers to other countries"
+    - "Brands that want to collaborate with photographic lighting equipment or audiovisual equipment (NIKON – CANON – SIGMA – SONY, DRONE among others)"
+    - "Wardrobe for the audiovisual team (preferably sustainable products)"
+    - "Makeup schools, stylists, or characterizations that want to collaborate."
+    - "Catering for normal and vegan food for the EL GRITO team (makeup artists, models, technicians)"
+    - "Van transportation for audiovisual and human equipment, for the 12 photographic sessions."
+    - "Accommodation for the team, for audiovisual production, during the photographic sessions, or for interviews and documentation in other countries."
+    - "Character artists."
+  exchangeNote: "All elements that are part of the exchange collaboration will be disseminated during the documentary filming, making of, social media, as a form of promotion and advertising diffusion."
+  sponsorshipNote: "Note: It is an even more sophisticated level because it is linked to a certain prestigious activity. A company decides to invest funds, products, or consideration in exchange for certain fundamental presence in the film. At the beginning, in the final credits in a very prominent way. Because it mutually generates prestige for both parties. (TV Channel Public Entities Greenpeace, Oceana, etc.)"
+  tiersTitle: "There are five ways to sponsor the EL GRITO documentary series:"

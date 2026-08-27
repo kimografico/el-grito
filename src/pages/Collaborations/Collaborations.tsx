@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom';
 import { Hero } from '../../components/Hero/Hero';
-import { siteContent } from '../../data/content';
+import { useTranslation } from '../../locales/context';
 import { scientists } from '../../data/scientists';
 import styles from './Collaborations.module.css';
 
 export function Collaborations() {
-  const { collaborations } = siteContent;
+  const { t, ts } = useTranslation();
 
   return (
     <div className={styles.collaborations}>
       <Hero
-        title={collaborations.title}
+        title={ts('collaborations.title')}
         image="/images/decorative/pexels-scientist.jpg"
       />
 
       <section className={styles.section}>
         <div className="container">
           <div className={styles.introText}>
-            {collaborations.description.split('\n\n').map((paragraph, index) => (
+            {ts('collaborations.description').split('\n\n').map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
           </div>
@@ -27,9 +27,9 @@ export function Collaborations() {
           </div>
 
           <div className={styles.specialties}>
-            <h3 className={styles.specialtiesTitle}>{collaborations.specialtiesTitle}</h3>
+            <h3 className={styles.specialtiesTitle}>{ts('collaborations.specialtiesTitle')}</h3>
             <ul className={styles.specialtiesList}>
-              {collaborations.specialties.map((specialty, index) => (
+              {(t('collaborations.specialties') as string[]).map((specialty, index) => (
                 <li key={index} className={styles.specialty}>
                   {specialty}
                 </li>
@@ -42,16 +42,16 @@ export function Collaborations() {
           </div>
 
           <div className={styles.callToAction}>
-            <strong>{collaborations.callToAction}</strong>
+            <strong>{ts('collaborations.callToAction')}</strong>
           </div>
 
           <div className={styles.participationText}>
-            {collaborations.participationText.split('\n\n').map((paragraph, index) => (
+            {ts('collaborations.participationText').split('\n\n').map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
           </div>
 
-          <h2 className={styles.scientistsTitle}>{collaborations.scientistsTitle}</h2>
+          <h2 className={styles.scientistsTitle}>{ts('collaborations.scientistsTitle')}</h2>
 
           <div className={styles.scientistsCarousel}>
             <div className={styles.scientistsTrack}>

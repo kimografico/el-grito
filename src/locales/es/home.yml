@@ -1,0 +1,34 @@
+home:
+  heroTitle: "¿Te imaginas qué sería del mundo en un futuro?"
+  heroSubtitle: "¿Qué podría pasar si seguimos con nuestros hábitos insostenibles? y haciendo caso omiso sobre lo que pasa en nuestro planeta Tierra."
+  heroDescription1: "¿Qué podría pasar si seguimos con nuestros hábitos insostenibles? y haciendo caso omiso sobre lo que pasa en nuestro planeta Tierra."
+  heroDescription2: "El GRITO es una serie documental que se refiere a la destrucción del medio ambiente producida por la especie humana, como el cambio climático, contaminación, deforestación, etc."
+  heroDescription3: "Será narrado, desde un punto de vista original, con la colaboración de científicos, artistas, creativos de diferentes especialidades, la idea es buscar, por medio de esta fusión, llegar a la emoción, alentar a la humanidad a que ponga en funcionamiento su talento en pos de las buenas causas a favor de la Tierra."
+  description: |
+    El GRITO es una serie documental que se refiere a la destrucción del medio ambiente producida por la especie humana, como el cambio climático, contaminación, deforestación, etc.
+
+    Será narrado, desde un punto de vista original, con la colaboración de científicos, artistas, creativos de diferentes especialidades, la idea es buscar, por medio de esta fusión, llegar a la emoción, alentar a la humanidad a que ponga en funcionamiento su talento en pos de las buenas causas a favor de la Tierra.
+
+    La creación artística de sesiones fotográficas, estilo editorial serán realizadas en la ciudad de Valencia. Todo el material audiovisual restante será rodado en diferentes partes del mundo.
+
+    Esta historia busca retratar de manera sencilla diferentes problemáticas ambientales por medio de diferentes canales creativos, pretenden reflejar el shock sobre el egoísmo y la carencia de compasión por parte de la «civilización».
+  quote: "Incluso cuando la esperanza y la ciencia nos fallan, el arte sobrevivirá"
+  quote2: "«Sentí un grito que atravesaba la naturaleza»"
+  structureTitle: "ESTRUCTURA EXPLICATIVA"
+  structureIntro: "El objetivo de nuestro documental EL GRITO es la generación de consciencia hacia el cuidado ambiental por medio del arte y la ciencia."
+  structureBody: "La historia será narrada y documentada con entrevistas a especialistas científicos, artistas, líderes comunitarios, etc, quienes respaldarán varias investigaciones con respecto al cambio climático y paralelo a sus versiones contaremos con una atmósfera artística, llena de imágenes fotográficas que expresarán por medio de la fantasía visual, cada una de las temáticas abordadas."
+  structureProcesses: "El documental tendrá varios procesos:"
+  phases:
+    - title: "PRE PRODUCCIÓN"
+      description: "En esta fase nuestra labor es conseguir, por varios canales: colaboraciones, subvenciones y el apoyo de diferentes organizaciones, fundaciones, asociaciones, ONGs, etc, que respalden la generación y el estímulo hacia la producción de este documental."
+      image: "/images/decorative/cientifico.png"
+    - title: "PRODUCCIÓN"
+      description: ""
+      image: "/images/decorative/entrevista.png"
+      content:
+        - "1.- Sesiones fotográficas artísticas\n\nSe realizarán una serie de 12 sesiones fotográficas, en donde la fantasía artística jugará un papel importante, ya que por medio de ella expresaremos EL GRITO de nuestro planeta TIERRA. La realización de las fotografías se elaborarán en la Comunidad de Valencia – España.\n\nEstas fotografías graficarán diferentes temáticas sobre el estado actual de nuestro planeta y sobre nuestras acciones a favor y en contra."
+        - "2.- Entrevistas\n\nParalelamente a las sesiones fotográficas, se contrastará información científica por medio de entrevistas a especialistas en diversas ramas de la ciencia, representantes comunitarios, artistas, personas que necesiten lanzar un grito desde su espacio, un grito que aporte a transparentar esta realidad. La finalidad de estas entrevistas es el reporte y la testificación de hechos controversiales como: la deforestación, los deshielos de los glaciales, incendios forestales, tráfico ilegal de fauna silvestre, pesca ilegal, contaminación, etc.\n\nEste proceso puede ser llevado a cabo en diferentes partes del mundo, ya que necesitaremos graficar los sucesos, recopilar archivos e información que servirá para la guionización y realización del documental. La posibilidad de traslado a diferentes partes del mundo sirve como fuente de generación de contenidos."
+    - title: "POST PRODUCCIÓN"
+      description: "En esta etapa se materializará la información recopilada en la fase de producción, aquí ejecutaremos todo el guión documental."
+    - title: "PROMOCIÓN"
+      description: "Una vez finalizada la parte de postproducción de EL GRITO, nuestra labor como equipo es promocionar nuestra historia, generar canales de vinculación hacia la investigación, la educación y el impulso por conseguir más alcance de consciencia ambiental.\n\nEL GRITO está proyectado también hacia una vía de promoción en diferentes festivales del mundo."

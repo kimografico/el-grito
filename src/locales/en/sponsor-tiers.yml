@@ -1,0 +1,45 @@
+sponsorTiers:
+  tierra:
+    name: "EARTH"
+    description: "Entities or individuals that contribute economic donations, or products that support the production of the documentary with a value starting from $5,000"
+    amount: "From $5,000"
+    benefits:
+      - "Prominent logo as one of the main sponsors"
+      - "A 5-minute interview will be conducted about the COMPANY as a motivational example for the documentary"
+      - "Broadcasting and participation in press conferences, round tables, and business events"
+      - "If the agreement is an exchange, the product or service will be shown through images that will be part of the visual narrative of the documentary"
+      - "Social media broadcasting including a customized still life"
+      - "Photo Call and Roll ups"
+  agua:
+    name: "WATER"
+    description: "Entities or individuals that contribute economic donations of more than $2,500 for production"
+    amount: "From $2,500"
+    benefits:
+      - "Secondary logo as sponsor in the premiere episode and 4 episodes of the documentary series"
+      - "A mention of the COMPANY as a motivational example and acknowledgment"
+      - "Social media broadcasting including a customized still life"
+      - "If the agreement is an exchange, the product or service will be shown through images that will be part of the visual narrative"
+      - "Photo Call and Roll ups"
+  fuego:
+    name: "FIRE"
+    description: "Entities or individuals that contribute economic donations of more than $1,000 for production"
+    amount: "From $1,000"
+    benefits:
+      - "Tertiary logo as sponsor"
+      - "Social media broadcasting"
+      - "Photo Call and Roll ups"
+  metal:
+    name: "METAL"
+    description: "Entities or individuals that contribute economic donations of more than $500 for production"
+    amount: "From $500"
+    benefits:
+      - "Quaternary logo as sponsor"
+      - "Broadcasting at press conferences"
+      - "Photo Call and Roll ups"
+  madera:
+    name: "WOOD"
+    description: "Entities or individuals that contribute economic donations of more than $250 for production"
+    amount: "From $250"
+    benefits:
+      - "Quinary logo as sponsor"
+      - "Mention at press conferences"

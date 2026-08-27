@@ -1,8 +1,10 @@
 import { Hero } from '../../components/Hero/Hero';
-import { siteContent } from '../../data/content';
+import { useTranslation } from '../../locales/context';
 import styles from './Home.module.css';
 
 export function Home() {
+  const { t, ts } = useTranslation();
+
   return (
     <div className={styles.home}>
       <Hero showLogo image="/images/decorative/antique-map-background.jpg" />
@@ -12,23 +14,16 @@ export function Home() {
           <div className={styles.twoColumns}>
             <div className={styles.columnText}>
               <h2 className={styles.heroTitle}>
-                ¿Te imaginas qué sería del mundo en un futuro?
+                {ts('home.heroTitle')}
               </h2>
               <p>
-                ¿Qué podría pasar si seguimos con nuestros hábitos insostenibles? y
-                haciendo caso omiso sobre lo que pasa en nuestro planeta Tierra.
+                {ts('home.heroDescription1')}
               </p>
               <p>
-                El GRITO es una serie documental que se refiere a la destrucción del
-                medio ambiente producida por la especie humana, como el cambio climático,
-                contaminación, deforestación, etc.
+                {ts('home.heroDescription2')}
               </p>
               <p>
-                Será narrado, desde un punto de vista original, con la colaboración de
-                científicos, artistas, creativos de diferentes especialidades, la idea es
-                buscar, por medio de esta fusión, llegar a la emoción, alentar a la
-                humanidad a que ponga en funcionamiento su talento en pos de las buenas
-                causas a favor de la Tierra.
+                {ts('home.heroDescription3')}
               </p>
             </div>
             <div className={styles.columnImage}>
@@ -48,22 +43,22 @@ export function Home() {
       >
         <div className={styles.parallaxOverlay}>
           <blockquote className={styles.parallaxText}>
-            {siteContent.home.quote}
+            {ts('home.quote')}
           </blockquote>
         </div>
       </section>
 
       <section className={styles.structureSection}>
         <div className="container">
-          <h2 className={styles.structureTitle}>{siteContent.home.structureTitle}</h2>
+          <h2 className={styles.structureTitle}>{ts('home.structureTitle')}</h2>
           <div className={styles.structureDescription}>
-            <p>{siteContent.home.structureIntro}</p>
-            <p>{siteContent.home.structureBody}</p>
-            <p>{siteContent.home.structureProcesses}</p>
+            <p>{ts('home.structureIntro')}</p>
+            <p>{ts('home.structureBody')}</p>
+            <p>{ts('home.structureProcesses')}</p>
           </div>
 
           <div className={styles.phases}>
-            {siteContent.home.phases.map((phase, index) => (
+            {(t('home.phases') as { title: string; description: string; image?: string; content?: string[] }[]).map((phase, index) => (
               <div key={index} className={styles.phaseRow}>
                 {phase.image ? (
                   <div className={styles.phaseImage}>
@@ -96,7 +91,7 @@ export function Home() {
       >
         <div className={styles.parallaxOverlay}>
           <blockquote className={styles.parallaxText}>
-            «Sentí un grito que atravesaba la naturaleza»
+            {ts('home.quote2')}
           </blockquote>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { useTranslation } from '../../locales/context';
 import styles from './ContactModal.module.css';
 
 interface ContactModalProps {
@@ -6,6 +7,8 @@ interface ContactModalProps {
 }
 
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {
+  const { ts } = useTranslation();
+
   if (!isOpen) return null;
 
   const handleOverlayClick = (e: React.MouseEvent) => {
@@ -15,17 +18,16 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
   return (
     <div className={styles.overlay} onClick={handleOverlayClick}>
       <div className={styles.modal}>
-        <button className={styles.close} onClick={onClose} aria-label="Cerrar">
+        <button className={styles.close} onClick={onClose} aria-label={ts('contact.modalCloseLabel')}>
           ×
         </button>
 
         <div className={styles.icon}>✉</div>
 
-        <h2 className={styles.title}>Contáctanos</h2>
+        <h2 className={styles.title}>{ts('contact.modalTitle')}</h2>
 
         <p className={styles.text}>
-          Si deseas ponerse en contacto con nuestro equipo, puedes escribirnos
-          a la siguiente dirección de correo electrónico:
+          {ts('contact.modalText')}
         </p>
 
         <a
@@ -39,14 +41,11 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           href="mailto:info@elgritodelanaturaleza.com"
           className={styles.button}
         >
-          Enviar email
+          {ts('contact.modalSendEmail')}
         </a>
 
         <p className={styles.note}>
-          NOTA: Si no tienes configurado un cliente de correo en tu dispositivo,
-          es posible que el botón no funcione correctamente. En ese caso,
-          puedes copiar la dirección de correo y enviar tu mensaje manualmente
-          desde tu aplicación de correo habitual.
+          {ts('contact.modalNote')}
         </p>
       </div>
     </div>

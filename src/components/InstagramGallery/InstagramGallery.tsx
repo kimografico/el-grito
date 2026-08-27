@@ -1,6 +1,9 @@
+import { useTranslation } from '../../locales/context';
 import styles from './InstagramGallery.module.css';
 
 export function InstagramGallery() {
+  const { ts } = useTranslation();
+
   return (
     <div className={styles.container}>
       <div className={styles.embedWrapper}>
@@ -19,7 +22,7 @@ export function InstagramGallery() {
         rel="noopener noreferrer"
         className={styles.followLink}
       >
-        Síguenos en Instagram →
+        {ts('pages.followInstagram')} →
       </a>
     </div>
   );

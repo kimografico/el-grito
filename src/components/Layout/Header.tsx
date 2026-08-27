@@ -1,14 +1,25 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { siteContent } from '../../data/content';
+import { useTranslation } from '../../locales/context';
 import { ContactModal } from '../ContactModal/ContactModal';
+import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import styles from './Header.module.css';
+
+interface NavItem {
+  label: string;
+  path: string;
+  children?: { label: string; path: string }[];
+}
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [contactModalOpen, setContactModalOpen] = useState(false);
   const location = useLocation();
+  const { t, ts } = useTranslation();
+
+  const navigation = t('navigation.items') as unknown as NavItem[];
+  const siteName = ts('global.siteName');
 
   const isActive = (path: string) => location.pathname === path;
   const isDropdownOpen = (label: string) => openDropdown === label;
@@ -53,7 +64,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={handleLinkClick}>
-          <img src="/images/logo/logo.png" alt={siteContent.siteName} />
+          <img src="/images/logo/logo.png" alt={siteName} />
         </Link>
 
         <button
@@ -68,7 +79,7 @@ export function Header() {
 
         <nav className={`${styles.nav} ${mobileMenuOpen ? styles.navOpen : ''}`}>
           <ul className={styles.navList}>
-            {siteContent.navigation.map((item) => (
+            {navigation.map((item) => (
               <li
                 key={item.label}
                 className={`${styles.navItem} ${item.children ? styles.hasDropdown : ''}`}
@@ -100,6 +111,7 @@ export function Header() {
               </li>
             ))}
           </ul>
+          <LanguageSwitcher />
         </nav>
       </div>
 

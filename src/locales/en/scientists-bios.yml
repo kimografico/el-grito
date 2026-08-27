@@ -1,0 +1,67 @@
+scientistBios:
+  jose-abel-flores:
+    role: "Science Communicator"
+    bio: |
+      Professor at the University of Salamanca in the Faculty of Sciences and the Institute of Science and Technology, as well as a visiting lecturer in several countries, he has created a school of distinguished researchers in the study of Coccolithophores (phytoplankton fundamental to the C cycle) in North and South America, Asia, Australia and Europe.
+
+      Pioneer in Spain and in the international community in the study of Coccolithophores, phytoplankton fundamental to the C cycle, and therefore in the characterization and evolution of climate, as a paleoenvironmental marker.
+
+      His commitment to the environment earned him the Castilla y León Environmental Protection Award in 2011.
+
+      With more than two hundred publications in the most prestigious scientific journals (Science or Nature) and the direction of 25 doctoral theses in Spain and abroad, he has been PI of national and international projects related to ocean exploration and its climatic history.
+
+      Currently, he is the Coordinator of the National Program of Earth and Water Sciences at the State Research Agency.
+    location: "Spain"
+  alex-hearn:
+    role: "President of Migramar"
+    bio: |
+      He is a marine fisheries ecologist who has worked as a professor and researcher at the Universidad San Francisco de Quito and the Galápagos Science Center since 2015.
+
+      He obtained his degree in Oceanography and Marine Biology from the University of Southampton, United Kingdom; and his master's and doctorate from Heriot-Watt University in the Orkney Islands.
+
+      He has worked in the Galápagos Islands since 2002 in fisheries research and management, and led the development of the Shark Research Program for the Galápagos Marine Reserve since 2006.
+
+      His current projects include the use of acoustic and satellite telemetry to establish shark migration routes, evaluating the movement ecology of the pelagic assemblage around oceanic islets and monitoring shark nurseries in the Galápagos Marine Reserve.
+    location: "United Kingdom / Ecuador"
+  shady-heredia:
+    role: "Animal Protection Ecuador"
+    bio: |
+      Campaign coordinator at Animal Protection Ecuador. Veterinarian, Activist, Vegetarian.
+
+      She has worked in animal rights defense for 10 years. She collaborates with various social organizations including the National Animalist Movement, Abolition is Evolution Collective, Ecuador Abolitionist Movement and Mundo Veg.
+
+      She has worked with international organizations such as the International Anti-Bullfighting Network and Open Wing Alliance.
+
+      Coordinator of the Cats at Home, Safe Birds campaign.
+    location: "Riobamba – Ecuador"
+  cristina-castro:
+    role: "PhD in Biology"
+    bio: |
+      Cristina Castro Ayala holds a PhD in Biology from the Universidad Central del Ecuador, her thesis was on "Demography of the humpback whale Megaptera novaeangliae in Machalilla National Park". She holds a Master's in Environmental Management from ESPE, with the thesis: "Management Plan for the marine area of PNM. Proposals for sustainable tourism and artisanal fishing".
+
+      Her field of research is Cetaceans: populations, ecology, acoustics. Between 2000 and 2009 she published several scientific articles in specialized whale journals, as individual author and co-author. She has participated in several international meetings of whale experts and in numerous conferences and talks.
+
+      She is a member of the Ecuadorian Association of Mammalogy, and Pacific Whale Foundation; Center for Whale Research in the Pacific, Ecuador, where she serves as Director of Research. For 20 years she has been studying humpback whales; she does so now with the same enthusiasm as in the early years and with the purpose of learning more and more about large marine mammals and supporting their conservation.
+    location: "Ecuador"
+  patricia-castillo:
+    role: "PhD in Biology"
+    bio: |
+      Researcher and scientific advisor in animal physiology applied to studies of climatic and environmental alterations.
+
+      Marine Biologist (Pontificia Universidad Católica del Ecuador – PUCE, Ecuador); MSc in Technology and Research in Experimental Sciences (Universidad de Murcia – UMU, Spain); MSc in Aquaculture (Escuela Superior Politécnica del Litoral – ESPOL, Ecuador); PhD in Biomedicine (UMU, Spain).
+
+      She has international experience as an evaluator in higher education calls for the European Commission and for research; and as a researcher at the Institute of Developmental Biology CNRS – U. Aix-Marseille (France); the Pasteur Institute in Paris (France), the University of Cambridge (United Kingdom); and ESPOL (Ecuador).
+
+      She currently resides in Ecuador, where she is Full Professor in the Biology program at Universidad Laica Eloy Alfaro de Manabí, and collaborates as a graduate professor at PUCE Manabí campus.
+    location: "Ecuador"
+  francisco-navarrete:
+    role: "Researcher and University Professor"
+    bio: |
+      Researcher and university professor focused on aquaculture, climate change and aquatic animal behavior.
+
+      Marine Biologist (Pontificia Universidad Católica del Ecuador – PUCE, Ecuador); MSc in Aquaculture and PhD in Fish Biology (Universidad de Murcia, Spain).
+
+      He has participated in multiple research projects to analyze the environmental impacts of aquaculture and other anthropogenic activities. His current research interests are focused on analyzing the ecological and behavioral alterations of native marine fauna under projected ocean acidification scenarios.
+
+      He is currently Full Professor at the Faculty of Marine Sciences at Universidad Laica Eloy Alfaro de Manabí, and collaborates as a graduate professor at PUCE Manabí campus.
+    location: "Ecuador"

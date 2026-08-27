@@ -24,9 +24,7 @@ export const Default: Story = {
     member: {
       id: 'lidia-aparicio',
       name: 'Lidia Aparicio Sales',
-      role: 'Directora – Guionista',
       image: '/images/team/lidia-aparicio.jpg',
-      bio: 'Test bio',
       category: 'team',
     },
   },
@@ -37,9 +35,7 @@ export const Artist: Story = {
     member: {
       id: 'kimo-saez',
       name: 'Kimo Sáez Blanco',
-      role: 'Diseñador Gráfico',
       image: '/images/artists/kimo-saez.jpg',
-      bio: 'Test bio',
       category: 'artists',
     },
   },

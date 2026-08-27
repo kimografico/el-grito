@@ -1,48 +1,48 @@
 import { Hero } from '../../components/Hero/Hero';
-import { siteContent } from '../../data/content';
+import { useTranslation } from '../../locales/context';
 import styles from './Volunteer.module.css';
 
 export function Volunteer() {
-  const { volunteer } = siteContent;
+  const { t, ts } = useTranslation();
 
   return (
     <div className={styles.volunteer}>
-      <Hero title={volunteer.title} image={volunteer.heroImage} />
+      <Hero title={ts('volunteer.title')} image={ts('volunteer.heroImage')} />
 
       <section className={styles.section}>
         <div className="container">
           <div className={styles.intro}>
-            {volunteer.description.split('\n\n').map((paragraph, index) => (
+            {ts('volunteer.description').split('\n\n').map((paragraph, index) => (
               <p key={index} className={styles.introText}>{paragraph}</p>
             ))}
           </div>
 
           <div className={styles.mission}>
-            <h3 className={styles.subTitle}>Misión</h3>
-            <p className={styles.missionText}>{volunteer.mission}</p>
+            <h3 className={styles.subTitle}>{ts('volunteer.missionTitle')}</h3>
+            <p className={styles.missionText}>{ts('volunteer.mission')}</p>
           </div>
 
           <div className={styles.howToParticipate}>
-            <h3 className={styles.subTitle}>¿Cómo puedo ser parte del Programa de Voluntariado EL GRITO?</h3>
-            <p className={styles.howToParticipateText}>{volunteer.howToParticipate}</p>
+            <h3 className={styles.subTitle}>{ts('volunteer.howToParticipateTitle')}</h3>
+            <p className={styles.howToParticipateText}>{ts('volunteer.howToParticipate')}</p>
           </div>
 
           <div className={styles.grid}>
             <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Requisitos</h3>
-              <p className={styles.cardSubtitle}>Buscamos voluntarios con:</p>
+              <h3 className={styles.cardTitle}>{ts('volunteer.requirementsTitle')}</h3>
+              <p className={styles.cardSubtitle}>{ts('volunteer.requirementsSubtitle')}</p>
               <ul className={styles.list}>
-                {volunteer.requirements.map((req, index) => (
+                {(t('volunteer.requirements') as string[]).map((req, index) => (
                   <li key={index} className={styles.listItem}>{req}</li>
                 ))}
               </ul>
             </div>
 
             <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Áreas temáticas</h3>
-              <p className={styles.cardSubtitle}>Áreas que forman parte del programa de Voluntariado:</p>
+              <h3 className={styles.cardTitle}>{ts('volunteer.areasTitle')}</h3>
+              <p className={styles.cardSubtitle}>{ts('volunteer.areasSubtitle')}</p>
               <ol className={styles.numberedList}>
-                {volunteer.areas.map((area, index) => (
+                {(t('volunteer.areas') as string[]).map((area, index) => (
                   <li key={index} className={styles.numberedItem}>{area}</li>
                 ))}
               </ol>
@@ -50,36 +50,36 @@ export function Volunteer() {
           </div>
 
           <div className={styles.cardFull}>
-            <h3 className={styles.cardTitle}>Funciones</h3>
+            <h3 className={styles.cardTitle}>{ts('volunteer.functionsTitle')}</h3>
             <ul className={styles.list}>
-              {volunteer.functions.map((func, index) => (
+              {(t('volunteer.functions') as string[]).map((func, index) => (
                 <li key={index} className={styles.listItem}>{func}</li>
               ))}
             </ul>
           </div>
 
           <div className={styles.materials}>
-            <h3 className={styles.subTitle}>Materiales que necesita traer el voluntario/a</h3>
-            <p className={styles.materialsText}>{volunteer.materials}</p>
+            <h3 className={styles.subTitle}>{ts('volunteer.materialsTitle')}</h3>
+            <p className={styles.materialsText}>{ts('volunteer.materials')}</p>
           </div>
 
           <div className={styles.cardFull}>
-            <h3 className={styles.cardTitle}>¿Cuáles son los beneficios del Programa de Voluntariado?</h3>
-            <p className={styles.cardSubtitle}>Al realizar tu voluntariado en EL GRITO, la Asociación te ofrece:</p>
+            <h3 className={styles.cardTitle}>{ts('volunteer.benefitsTitle')}</h3>
+            <p className={styles.cardSubtitle}>{ts('volunteer.benefitsSubtitle')}</p>
             <ul className={styles.list}>
-              {volunteer.benefits.map((benefit, index) => (
+              {(t('volunteer.benefits') as string[]).map((benefit, index) => (
                 <li key={index} className={styles.listItem}>{benefit}</li>
               ))}
             </ul>
           </div>
 
           <div className={styles.contact}>
-            <h3 className={styles.subTitle}>¿Cómo contactarnos?</h3>
-            <p className={styles.contactText}>{volunteer.contactText}</p>
+            <h3 className={styles.subTitle}>{ts('volunteer.contactTitle')}</h3>
+            <p className={styles.contactText}>{ts('volunteer.contactText')}</p>
           </div>
 
           <div className={styles.note}>
-            <p>{volunteer.note}</p>
+            <p>{ts('volunteer.note')}</p>
           </div>
         </div>
       </section>

@@ -1,47 +1,71 @@
 import { Hero } from '../../components/Hero/Hero';
 import { Accordion } from '../../components/Accordion/Accordion';
-import { siteContent } from '../../data/content';
-import { sponsorTiers } from '../../data/sponsors';
+import { useTranslation } from '../../locales/context';
+import { sponsorTiers as sponsorTiersData } from '../../data/sponsors';
 import styles from './Sponsors.module.css';
 
+interface TierTranslation {
+  name: string;
+  description: string;
+  amount: string;
+  benefits: string[];
+}
+
 export function Sponsors() {
-  const { sponsors } = siteContent;
+  const { t, ts } = useTranslation();
+
+  const participationTypes = t('sponsors.participationTypes') as { title: string; content: string }[];
+  const exchangeExamples = t('sponsors.exchangeExamples') as string[];
 
   const participationWithExchange = [
-    ...sponsors.participationTypes,
+    ...participationTypes,
     {
-      title: sponsors.exchangeTitle,
+      title: ts('sponsors.exchangeTitle'),
       content: (
         <>
-          <p className={styles.accordionText}>{sponsors.exchangeDescription}</p>
+          <p className={styles.accordionText}>{ts('sponsors.exchangeDescription')}</p>
           <ul className={styles.accordionList}>
-            {sponsors.exchangeExamples.map((example, index) => (
+            {exchangeExamples.map((example, index) => (
               <li key={index}>{example}</li>
             ))}
           </ul>
-          <p className={styles.accordionText}>{sponsors.exchangeNote}</p>
-          <p className={styles.accordionNote}>{sponsors.sponsorshipNote}</p>
+          <p className={styles.accordionText}>{ts('sponsors.exchangeNote')}</p>
+          <p className={styles.accordionNote}>{ts('sponsors.sponsorshipNote')}</p>
         </>
       ),
     },
   ];
 
+  const sustainabilityAreas = t('sponsors.sustainabilityAreas') as { title: string; description: string; icon: string }[];
+  const legislationLaws = t('sponsors.legislationLaws') as string[];
+
+  const sponsorTiers = sponsorTiersData.map((tier) => {
+    const translated = t(`sponsorTiers.${tier.id}`) as unknown as TierTranslation;
+    return {
+      ...tier,
+      name: translated?.name ?? tier.name,
+      description: translated?.description ?? tier.description,
+      amount: translated?.amount ?? tier.amount,
+      benefits: translated?.benefits ?? tier.benefits,
+    };
+  });
+
   return (
     <div className={styles.sponsors}>
       <Hero
-        title="Recompensas"
+        title={ts('sponsors.heroTitle')}
         image="/images/decorative/antique-map-background.jpg"
       />
 
       <section className={styles.section}>
         <div className="container">
           <div className={styles.header}>
-            <h1 className={styles.title}>{sponsors.title}</h1>
+            <h1 className={styles.title}>{ts('sponsors.title')}</h1>
             <img src="/images/logo/logo-full.png" alt="El Grito" className={styles.logo} />
           </div>
 
           <div className={styles.introText}>
-            {sponsors.description.split('\n\n').map((paragraph, index) => (
+            {ts('sponsors.description').split('\n\n').map((paragraph, index) => (
               <p key={index}>
                 {index === 0 && <strong>{paragraph}</strong>}
                 {index !== 0 && paragraph}
@@ -50,11 +74,11 @@ export function Sponsors() {
           </div>
 
           <div className={styles.card}>
-            <h2 className={styles.cardTitle}>{sponsors.sustainabilityTitle}</h2>
-            <p className={styles.cardIntro}>{sponsors.sustainabilityIntro}</p>
+            <h2 className={styles.cardTitle}>{ts('sponsors.sustainabilityTitle')}</h2>
+            <p className={styles.cardIntro}>{ts('sponsors.sustainabilityIntro')}</p>
 
             <div className={styles.areas}>
-              {sponsors.sustainabilityAreas.map((area, index) => (
+              {sustainabilityAreas.map((area, index) => (
                 <div key={index} className={styles.area}>
                   <img
                     src={area.icon}
@@ -70,33 +94,33 @@ export function Sponsors() {
             </div>
 
             <div className={styles.sustainabilityBody}>
-              {sponsors.sustainabilityBody.split('\n\n').map((paragraph, index) => (
+              {ts('sponsors.sustainabilityBody').split('\n\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
 
-            <a href="#" className={styles.testButton}>
-              {sponsors.testButton}
-            </a>
+            {/* <a href="#" className={styles.testButton}>
+              {ts('sponsors.testButton')}
+            </a> */}
           </div>
 
           <div className={styles.legislation}>
-            <h3 className={styles.legislationTitle}>{sponsors.legislationTitle}</h3>
-            <p className={styles.legislationText}>{sponsors.legislationText}</p>
+            <h3 className={styles.legislationTitle}>{ts('sponsors.legislationTitle')}</h3>
+            <p className={styles.legislationText}>{ts('sponsors.legislationText')}</p>
             <ul className={styles.legislationLaws}>
-              {sponsors.legislationLaws.map((law, index) => (
+              {legislationLaws.map((law, index) => (
                 <li key={index} className={styles.law}>{law}</li>
               ))}
             </ul>
-            <p className={styles.legislationExtra}>{sponsors.legislationExtra}</p>
+            <p className={styles.legislationExtra}>{ts('sponsors.legislationExtra')}</p>
           </div>
 
           <div className={styles.participation}>
-            <h3 className={styles.participationTitle}>{sponsors.participationTitle}</h3>
+            <h3 className={styles.participationTitle}>{ts('sponsors.participationTitle')}</h3>
             <Accordion items={participationWithExchange} />
           </div>
 
-          <h3 className={styles.tiersTitle}>Hay cinco formas de patrocinar la serie documental EL GRITO:</h3>
+          <h3 className={styles.tiersTitle}>{ts('sponsors.tiersTitle')}</h3>
 
           <div className={styles.tiers}>
             {sponsorTiers.map((tier) => (

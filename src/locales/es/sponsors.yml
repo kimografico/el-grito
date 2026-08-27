@@ -1,0 +1,69 @@
+sponsors:
+  heroTitle: "Recompensas"
+  title: "APADRINA EL PROYECTO DOCUMENTAL"
+  subtitle: "El Grito"
+  description: |
+    Recibe un cordial saludo de quienes hacemos parte del proyecto EL GRITO – BIOTOX, una serie documental enfocada al Medio Ambiente, en donde por medio del arte y la ciencia intentaremos generar un centro de debate hacia el Cambio Climático.
+
+    A través de la presente, me complace extenderle una cordial invitación para participar en este macro proyecto EL GRITO – BIOTOX. Queremos que formes parte de este gran sueño, y que por medio de alianzas podamos afianzar nexos colaborativos que permitan la consecución de este proyecto.
+
+    Con tu apoyo podríamos conseguir los fondos para EL GRITO, o generar alianzas con empresas colaboradoras que compartan estas especialidades y filosofía ambiental o cuidado del medio ambiente.
+  sustainabilityTitle: "¿Cómo saber si tu asociación o empresa cumple con nuestros valores?"
+  sustainabilityIntro: |
+    Necesitamos empresas sostenibles que cumplan estos requisitos:
+
+    Una empresa sostenible es un negocio que no solo aspira a maximizar su beneficio económico, sino también su impacto positivo en la sociedad y en el medio ambiente.
+
+    Por eso, se dice que las empresas sostenibles son aquellas que no solo buscan su beneficio económico y ya está, sino maximizar una triple cuenta de resultados.
+
+    Por tanto, los requisitos principales para considerar a una empresa sostenible serían:
+  sustainabilityAreas:
+    - title: "Optimizar el beneficio económico"
+      description: "como siempre ha sido en las empresas."
+      icon: "/images/decorative/opt-economico.png"
+    - title: "Optimizar el beneficio social"
+      description: "creando un impacto positivo en la sociedad, contribuyendo a su avance, su riqueza y su bienestar."
+      icon: "/images/decorative/opt-social.png"
+    - title: "Optimizar el beneficio medioambiental"
+      description: "primero de todo, minimizando o eliminando cualquier perjuicio ecológico que causan."
+      icon: "/images/decorative/opt-medioambiental.png"
+  sustainabilityBody: |
+    EMPRESAS
+    A partir de ahí, pueden maximizar su «cuenta de resultados medioambiental», contribuyendo activamente a la mejora de las condiciones del medio ambiente que nos rodea.
+
+    Cuando una empresa cumple a la vez esos tres requisitos, se la puede considerar sostenible.
+    Es importante que el esfuerzo sea conjunto en los tres frentes. Si una empresa busca su beneficio económico y elimina su impacto negativo ambiental, pero aún así no contribuye al beneficio social (por ejemplo, proporcionando sueldos bajos y realizando explotación laboral) no se considera sostenible.
+  testButton: "¡Haz nuestro test de idoneidad!"
+  legislationTitle: "La legislación sobre empresas sostenibles en España:"
+  legislationText: |
+    El concepto de empresa sostenible no es algo rígido, bajo una ley estricta, que conceda etiquetas oficiales. Sin embargo, sí es cierto que el concepto de desarrollo sostenible y responsabilidad social es algo que se ha integrado en nuestra legislación.
+    Así, para potenciar la sostenibilidad en la actividad empresarial encontramos todo tipo de leyes en España. Estas son algunas de ellas:
+  legislationLaws:
+    - "La Ley 2/2011 de 4 de marzo de Economía Sostenible."
+    - "La Ley 26/2007 de Responsabilidad Ambiental."
+    - "Leyes laborales que contribuyen a la mejora del bienestar social. Dos ejemplos son las leyes de conciliación familiar y laboral o la ley orgánica para la igualdad efectiva entre hombres y mujeres."
+  legislationExtra: "Además de esas leyes, hay otras normativas, como las ISO, que establecen criterios de calidad y sostenibilidad en la actuación de las empresas. Pero no solo las empresas sostenibles han calado en la legislación, también lo han hecho en la sociedad."
+  participationTitle: "Las EMPRESAS pueden participar como:"
+  participationTypes:
+    - title: "Auspiciantes"
+      content: "Es un convenio entre un canal o productora con una empresa, en el marco de un contrato para la emisión de spot publicitarios, menciones, banners digitales de una marca de un programa de televisión a cambio de una contraprestación económica."
+    - title: "Patrocinadores"
+      content: "Es un convenio económico en el que se pone énfasis en un posicionamiento concreto de los mismos asociándolo a una actividad de cierto prestigio.\n\nSon contratos super exclusivos y con varias condiciones donde se cuida la imagen de una empresa o institución ante la opinión pública."
+    - title: "Product Placement"
+      content: "En el caso del proyecto El Grito es una estrategia publicitaria y una gran fuente de financiación audiovisual que consiste en insertar la marca de un producto audiovisual con el fin de darle a este publicidad a cambio de remuneración. Colocar un producto dentro de tu producción. Relativo a la inversión de la empresa se diagnosticará el valor. Ej. Si la empresa requiere salir en un solo capítulo o en varios."
+  exchangeTitle: "Canjes"
+  exchangeDescription: |
+    Consiste en el intercambio de menciones o logos, agradecimientos, etc. Por servicios o productos. Lo más comunes son: Peluquerías, gimnasios, ropa para los actores, Maquillaje, estilistas, productos cosméticos, equipos fotográficos, iluminación, prendas, Catering y transporte para el equipo.
+    Todos los productos deben ser sostenibles.
+  exchangeExamples:
+    - "Agencias de viajes que costeen los traslados a otros países"
+    - "Marcas que quieran colaborar con equipos de iluminación fotográfica o equipos de audiovisuales (NIKON – CANON – SIGMA – SONY, DRON entre otras)"
+    - "Vestuario para el equipo audiovisual (si es posible productos sostenibles)"
+    - "Escuelas de maquillaje, estilistas o caracterización que quieran colaborar."
+    - "Catering para alimentación normal y vegana para el equipo de EL GRITO (maquilladores, modelos, técnicos)"
+    - "Transporte en Furgonetas para el traslado de equipos audiovisual y humano, para las 12 sesiones fotográficas."
+    - "Hospedaje para el equipo, para la producción audiovisual, durante la realización de sesiones fotográficas, o para las entrevistas y documentación en otros países."
+    - "Artistas de caracterización de personajes."
+  exchangeNote: "Todos los elementos que formen parte de la colaboración en canjes serán difundidos durante los rodajes del documental, making of, redes sociales, a modo de promoción y difusión publicitaria."
+  sponsorshipNote: "Nota: Es un nivel incluso más sofisticado porque está ligada a cierta actividad de prestigio. Una empresa decide invertir fondos producto o contraprestación a cambio de cierta presencia fundamental en la película. Al inicio, en los créditos finales de un modo muy presencial. Porque genera mutuamente un prestigio para ambas. (Canal TV Entidades Públicas Greenpeace, Oceana, etc)"
+  tiersTitle: "Hay cinco formas de patrocinar la serie documental EL GRITO:"

@@ -1,23 +1,23 @@
 import { Hero } from '../../components/Hero/Hero';
 import { ContactForm } from '../../components/ContactForm/ContactForm';
+import { useTranslation } from '../../locales/context';
 import styles from './Contact.module.css';
 
 export function Contact() {
+  const { ts } = useTranslation();
+
   return (
     <div className={styles.contact}>
       <Hero
-        title="Contacto"
-        subtitle="¡La Tierra te necesita!"
+        title={ts('pages.contactTitle')}
+        subtitle={ts('pages.contactSubtitle')}
       />
 
       <section className={styles.section}>
         <div className="container">
           <div className={styles.intro}>
-            <p>¿Te imaginas qué sería del mundo en un futuro?</p>
-            <p>
-              ¿Qué podría pasar si seguimos con nuestros hábitos insostenibles? y
-              haciendo caso omiso sobre lo que pasa en nuestro planeta Tierra.
-            </p>
+            <p>{ts('pages.contactIntro1')}</p>
+            <p>{ts('pages.contactIntro2')}</p>
           </div>
 
           <ContactForm />

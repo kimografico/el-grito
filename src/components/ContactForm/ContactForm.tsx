@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from '../../locales/context';
 import styles from './ContactForm.module.css';
 
 export function ContactForm() {
@@ -6,10 +7,11 @@ export function ContactForm() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const { ts } = useTranslation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:info@elgritodelanaturaleza.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    const mailtoLink = `mailto:info@elgritodelanaturaleza.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`${ts('contact.formMailtoName')} ${name}\n${ts('contact.formMailtoEmail')} ${email}\n\n${message}`)}`;
     window.location.href = mailtoLink;
   };
 
@@ -17,7 +19,7 @@ export function ContactForm() {
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.field}>
         <label htmlFor="name" className={styles.label}>
-          Tu nombre
+          {ts('contact.formName')}
         </label>
         <input
           type="text"
@@ -31,7 +33,7 @@ export function ContactForm() {
 
       <div className={styles.field}>
         <label htmlFor="email" className={styles.label}>
-          Tu correo electrónico
+          {ts('contact.formEmail')}
         </label>
         <input
           type="email"
@@ -45,7 +47,7 @@ export function ContactForm() {
 
       <div className={styles.field}>
         <label htmlFor="subject" className={styles.label}>
-          Asunto
+          {ts('contact.formSubject')}
         </label>
         <input
           type="text"
@@ -59,7 +61,7 @@ export function ContactForm() {
 
       <div className={styles.field}>
         <label htmlFor="message" className={styles.label}>
-          Tu mensaje (opcional)
+          {ts('contact.formMessage')}
         </label>
         <textarea
           id="message"
@@ -71,7 +73,7 @@ export function ContactForm() {
       </div>
 
       <button type="submit" className={styles.button}>
-        Enviar mensaje
+        {ts('contact.formSubmit')}
       </button>
     </form>
   );

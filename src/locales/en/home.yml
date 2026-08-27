@@ -1,0 +1,34 @@
+home:
+  heroTitle: "Can you imagine what the world would be like in the future?"
+  heroSubtitle: "What could happen if we continue with our unsustainable habits? and turning a blind eye to what is happening to our planet Earth."
+  heroDescription1: "What could happen if we continue with our unsustainable habits? and turning a blind eye to what is happening to our planet Earth."
+  heroDescription2: "EL GRITO is a documentary series about the destruction of the environment caused by the human species, such as climate change, pollution, deforestation, etc."
+  heroDescription3: "It will be narrated from an original perspective, with the collaboration of scientists, artists, and creatives from different specialties. The idea is to seek, through this fusion, to reach emotions and encourage humanity to put their talent to work in favor of good causes for the Earth."
+  description: |
+    EL GRITO is a documentary series about the destruction of the environment caused by the human species, such as climate change, pollution, deforestation, etc.
+
+    It will be narrated from an original perspective, with the collaboration of scientists, artists, and creatives from different specialties. The idea is to seek, through this fusion, to reach emotions and encourage humanity to put their talent to work in favor of good causes for the Earth.
+
+    The artistic creation of editorial-style photographic sessions will be carried out in the city of Valencia. All remaining audiovisual material will be filmed in different parts of the world.
+
+    This story seeks to portray in a simple way different environmental problems through different creative channels, intending to reflect the shock over the selfishness and lack of compassion of "civilization."
+  quote: "Even when hope and science fail us, art will survive"
+  quote2: "\"I felt a scream that crossed nature\""
+  structureTitle: "EXPLANATORY STRUCTURE"
+  structureIntro: "The objective of our documentary EL GRITO is to generate awareness towards environmental care through art and science."
+  structureBody: "The story will be narrated and documented with interviews with scientific specialists, artists, community leaders, etc., who will support various investigations regarding climate change, and parallel to their accounts we will have an artistic atmosphere, full of photographic images that will express through visual fantasy, each of the topics addressed."
+  structureProcesses: "The documentary will have several processes:"
+  phases:
+    - title: "PRE-PRODUCTION"
+      description: "In this phase, our work is to obtain, through various channels: collaborations, grants, and support from different organizations, foundations, associations, NGOs, etc., that support the generation and stimulation towards the production of this documentary."
+      image: "/images/decorative/cientifico.png"
+    - title: "PRODUCTION"
+      description: ""
+      image: "/images/decorative/entrevista.png"
+      content:
+        - "1.- Artistic photographic sessions\n\nA series of 12 photographic sessions will be carried out, where artistic fantasy will play an important role, since through it we will express THE SCREAM of our planet EARTH. The photographs will be created in the Community of Valencia, Spain.\n\nThese photographs will depict different themes about the current state of our planet and about our actions in favor and against."
+        - "2.- Interviews\n\nParallel to the photographic sessions, scientific information will be contrasted through interviews with specialists in various branches of science, community representatives, artists, people who need to scream from their space, a scream that contributes to making this reality transparent. The purpose of these interviews is the reporting and testimony of controversial facts such as: deforestation, glacier melting, forest fires, illegal wildlife trafficking, illegal fishing, pollution, etc.\n\nThis process can be carried out in different parts of the world, since we will need to depict the events, gather files and information that will be useful for the scripting and production of the documentary. The possibility of traveling to different parts of the world serves as a source of content generation."
+    - title: "POST-PRODUCTION"
+      description: "In this stage, the information gathered in the production phase will be materialized. Here we will execute the entire documentary script."
+    - title: "PROMOTION"
+      description: "Once the post-production of EL GRITO is completed, our work as a team is to promote our story, generate channels linking to research, education, and the drive to achieve greater environmental awareness reach.\n\nEL GRITO is also projected towards promotion at different festivals around the world."

@@ -22,10 +22,7 @@ export const Default: Story = {
       id: 'migramar',
       name: 'MIGRAMAR',
       logo: '/images/organizations/migramar.png',
-      description:
-        'La red MigraMar lleva a cabo la investigación científica necesaria para comprender mejor y salvaguardar poblaciones saludables de especies migratorias marinas en el Pacífico Oriental.',
       website: 'https://www.migramar.org/en/index',
-      location: 'Costa Rica y Estados Unidos',
     },
   },
 };

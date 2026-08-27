@@ -1,0 +1,37 @@
+organizations:
+  migramar:
+    description: "The MigraMar network conducts the scientific research necessary to better understand and safeguard healthy populations of marine migratory species in the Eastern Pacific."
+    location: "Costa Rica and United States"
+  kuna:
+    description: "KUNA is a Community of social actors interested in strengthening communication between researchers, scientists, academics and society in general to strengthen access to scientific and ancestral knowledge, through the development of interdisciplinary projects and outreach activities in public spaces."
+    location: "Community of Science and Ancestral Knowledge Communicators of Ecuador"
+  pae:
+    description: |
+      The Animal Protection Ecuador Foundation, PAE, was founded and legalized in Quito on August 3, 1984 before the Ministry of Social and Economic Inclusion under the original figure of an association and subsequently reformed to a foundation on March 2, 2005 with Ministerial Agreement # 4883, as a non-political, non-religious entity with legal personality, of private law and non-profit, founded for the defense and protection of animals.
+
+      It promotes the protection and welfare of animals through direct actions and community awareness of the respect they deserve and should be given to other species.
+    location: "Ecuador"
+  fondo-animal:
+    description: |
+      Fondo Animal is a crowdfunding platform that seeks to help projects from legally recognized organizations that currently work with urban or wildlife fauna, to connect them with young change agents committed to animal welfare and species conservation.
+
+      We believe in collaborative creation, so we seek to generate communities of help among: biodiversity conservation projects, wildlife shelters, zoos that work with native fauna, urban fauna shelters or shelters, among others.
+
+      We mainly support projects that seek the welfare of companion animals and the conservation of native wildlife. The best way to actively help is by participating in the projects on this platform, within each of them you can help with: donations, volunteering or purchasing products from each of the projects.
+    location: "Ecuador"
+  mas-galapagos:
+    description: |
+      We are a group of citizens who love, value and respect the marine biodiversity that characterizes the Galápagos archipelago and we want to defend it.
+
+      We propose concrete actions for the protection of the Galápagos Marine Reserve, working as a single team, Authorities and Civil Society, with the objective of keeping the fragile ecosystems of the World Heritage Site preserved, which are once again threatened today.
+    location: "Ecuador"
+  amseld:
+    description: |
+      The AMSELD philosophy arises from the current need to help each other achieve our dreams in the professional and family fields, where the members are characterized by being entrepreneurs, tireless workers and solidarity. To carry it out, a Directory of Member Companies has been formed, an archive base with which we keep members informed about all topics related to women: fashion, beauty, health, care, employment, events, meetups, courses and workshops, outings or excursions, etc. In them you will find a group of people similar to you, a meeting point to dispel doubts you may have, support and collaboration when you want to organize an event, business advice, discounts on purchases made at club companies, information about events in various locations across our geography, and evenings of guaranteed fun.
+    location: "Spain"
+  ebioac:
+    description: |
+      Equatorial BIOME and ocean acidification (EBIOAc) is one of the research projects carried out at the Universidad Laica Eloy Alfaro de Manabí (ULEAM), in the Faculty of Marine Sciences, since March 2016, under the direction of PhDs Patricia Castillo-Briceño and Francisco Navarrete-Mier, faculty members of this academic unit.
+
+      The project is framed within objective 7 of the National Good Living Plan, which guarantees the right of nature and promotes territorial and global environmental sustainability. Additionally, it is within ULEAM's research line 5: Biology, Ecology and Conservation of Marine and Terrestrial Flora and Fauna, and linked to the Biodiversity and Environment program.
+    location: "Ecuador"
