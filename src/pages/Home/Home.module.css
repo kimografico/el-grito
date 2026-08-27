@@ -1,0 +1,177 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.columnText {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-light);
+}
+
+.columnText p {
+  margin-bottom: var(--space-lg);
+}
+
+.heroTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.columnImage {
+  display: flex;
+  justify-content: center;
+}
+
+.shadowImage {
+  max-width: 350px;
+  border: 15px solid var(--color-bg-white);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.parallaxQuote {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.parallaxOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-lg);
+}
+
+.parallaxText {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: var(--space-xl);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-4xl);
+  font-style: italic;
+  font-weight: 700;
+  color: var(--color-text-inverse);
+  text-align: center;
+  border: none;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.structureSection {
+  padding: var(--space-3xl) 0;
+  background-color: var(--color-bg);
+}
+
+.structureTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-align: left;
+  margin-bottom: var(--space-lg);
+}
+
+.structureDescription {
+  max-width: 700px;
+  margin-bottom: var(--space-2xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  text-align: left;
+  line-height: var(--line-height-relaxed);
+}
+
+.phases {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.phaseRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-2xl);
+}
+
+.phaseImage {
+  flex-shrink: 0;
+  width: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: var(--space-sm);
+}
+
+.phaseImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  opacity: 0.5;
+  transition: opacity var(--transition-normal);
+}
+
+.phaseImage img:hover {
+  opacity: 1;
+}
+
+.phaseImagePlaceholder {
+  flex-shrink: 0;
+  width: 150px;
+}
+
+.phaseContent {
+  flex: 1;
+}
+
+.phaseTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.phaseDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .twoColumns {
+    grid-template-columns: 1fr;
+  }
+
+  .phaseRow {
+    flex-direction: column;
+  }
+
+  .phaseImage,
+  .phaseImagePlaceholder {
+    width: 100%;
+  }
+}

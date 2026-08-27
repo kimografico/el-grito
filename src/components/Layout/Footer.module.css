@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+  padding: var(--space-lg) 0;
+  margin-top: auto;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+.copyright {
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  opacity: 0.7;
+  margin: 0;
+}
+
+.copyright a {
+  color: var(--color-text-inverse);
+  text-decoration: underline;
+}
+
+.copyright a:hover {
+  opacity: 1;
+}

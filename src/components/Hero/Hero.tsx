@@ -1,0 +1,31 @@
+import styles from './Hero.module.css';
+
+interface HeroProps {
+  title?: string;
+  subtitle?: string;
+  image?: string;
+  showLogo?: boolean;
+}
+
+export function Hero({ title, subtitle, image, showLogo = false }: HeroProps) {
+  return (
+    <section
+      className={styles.hero}
+      style={image ? { backgroundImage: `url(${image})` } : undefined}
+    >
+      <div className={styles.overlay}>
+        <div className={styles.content}>
+          {showLogo && (
+            <img
+              src="/images/logo/logo-full.png"
+              alt="El Grito"
+              className={styles.logo}
+            />
+          )}
+          {title && <h1 className={styles.title}>{title}</h1>}
+          {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+        </div>
+      </div>
+    </section>
+  );
+}

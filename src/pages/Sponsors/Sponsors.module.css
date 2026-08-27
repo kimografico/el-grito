@@ -1,0 +1,335 @@
+.sponsors {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.introText {
+  margin-bottom: var(--space-2xl);
+}
+
+.introText p {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-lg);
+  text-align: justify;
+}
+
+.introText p strong {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+}
+
+.card {
+  padding: var(--space-2xl);
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--space-3xl);
+}
+
+.cardTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.cardIntro {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-2xl);
+  white-space: pre-line;
+}
+
+.areas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.area {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  text-align: left;
+}
+
+.areaIcon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.areaText {
+  flex: 1;
+}
+
+.areaTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.areaDescription {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.sustainabilityBody {
+  margin-bottom: var(--space-2xl);
+}
+
+.sustainabilityBody p {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-lg);
+  text-align: justify;
+}
+
+.testButton {
+  display: block;
+  width: 100%;
+  padding: var(--space-md) var(--space-xl);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-inverse);
+  background-color: var(--color-primary);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  text-align: center;
+  transition: background-color var(--transition-fast);
+}
+
+.testButton:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-inverse);
+}
+
+.legislation {
+  margin-bottom: var(--space-3xl);
+}
+
+.legislationTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.legislationText {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-lg);
+}
+
+.legislationLaws {
+  list-style: disc;
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.law {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-sm);
+}
+
+.legislationExtra {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.participation {
+  margin-bottom: var(--space-3xl);
+}
+
+.participationTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.accordionText {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-md);
+}
+
+.accordionList {
+  list-style: disc;
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.accordionList li {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-sm);
+}
+
+.accordionNote {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xxs);
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.tiersTitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-xl);
+}
+
+.tierCard {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.tierCard:hover {
+  transform: translateY(-4px);
+}
+
+.tierImage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.tierImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tierContent {
+  padding: var(--space-lg);
+}
+
+.tierIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: var(--space-md);
+}
+
+.tierName {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.tierDescription {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-md);
+}
+
+.tierAmount {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.tierBenefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit {
+  position: relative;
+  padding-left: var(--space-xl);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-sm);
+}
+
+.benefit::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 768px) {
+  .tiers {
+    grid-template-columns: 1fr;
+  }
+}
