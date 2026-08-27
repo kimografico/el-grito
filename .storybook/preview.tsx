@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react-vite'
 import { LocaleProvider } from '../src/locales/context'
+import '../src/styles/global.css'
 
 const preview: Preview = {
   decorators: [
