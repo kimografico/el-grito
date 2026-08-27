@@ -7,22 +7,51 @@
   padding: var(--space-3xl) 0;
 }
 
-.mission {
-  max-width: 700px;
-  margin: 0 auto var(--space-2xl);
+.intro {
+  margin-bottom: var(--space-2xl);
   text-align: center;
-  padding: var(--space-xl);
 }
 
-.missionTitle {
+.introText {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-lg);
+  text-align: justify;
+}
+
+.subTitle {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.mission {
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-xl);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-lg);
+  text-align: center;
 }
 
 .missionText {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.howToParticipate {
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.howToParticipateText {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-base);
   color: var(--color-text-light);
@@ -39,6 +68,17 @@
 
 .card {
   padding: var(--space-xl);
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardFull {
+  padding: var(--space-xl);
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--space-2xl);
 }
 
 .cardTitle {
@@ -46,9 +86,17 @@
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-sm);
   padding-bottom: var(--space-md);
   border-bottom: 2px solid var(--color-accent);
+}
+
+.cardSubtitle {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+  font-style: italic;
 }
 
 .list {
@@ -56,6 +104,8 @@
   flex-direction: column;
   gap: var(--space-sm);
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .listItem {
@@ -75,9 +125,61 @@
   font-weight: var(--font-weight-bold);
 }
 
+.numberedList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: item;
+}
+
+.numberedItem {
+  position: relative;
+  padding-left: var(--space-xl);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  counter-increment: item;
+}
+
+.numberedItem::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+}
+
+.materials {
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.materialsText {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.contact {
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.contactText {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
 .note {
-  max-width: 700px;
-  margin: 0 auto;
   padding: var(--space-lg);
   background-color: var(--color-bg);
   border-radius: var(--radius-md);

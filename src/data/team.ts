@@ -69,10 +69,18 @@ Nos involucramos y participamos en temas tan diversos e importantes como: Medioa
 export const artists: TeamMember[] = [
   {
     id: 'kimo-saez',
-    name: 'Kimo Sáez Blanco',
+    name: 'Kimográfico',
     role: 'Diseñador Gráfico',
     image: '/images/artists/kimo-saez.jpg',
-    bio: 'Diseñador gráfico del proyecto El Grito.',
+    bio: `Diseñador gráfico afincado en Valencia con más de 20 años de experiencia. Nunca ha dejado de formarse, ampliando continuamente sus habilidades en áreas como la ilustración y el packaging.
+
+Su principal campo de trabajo es el diseño y desarrollo web, donde combina su faceta creativa con la parte técnica para crear experiencias digitales completas. Además, domina la identidad corporativa, papelería comercial, cartelería y editorial.
+
+Ha colaborado con clientes como Decathlon, Leroy Merlin, Generalitat Valenciana, Turismo de Montanejos, escritores y diversos artistas. En los últimos tiempos ha incorporado la inteligencia artificial como herramienta clave en su flujo de trabajo, potenciando su capacidad creativa y eficiencia.
+
+En el proyecto El Grito, Kimográfico aporta su sensibilidad creativa para dar forma visual a la identidad del documental, traduciendo sus valores de concienciación ambiental en un lenguaje gráfico que conecta con el público.
+
+Más información en kimografico.com`,
     category: 'artists',
   },
   {

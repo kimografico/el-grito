@@ -88,10 +88,12 @@ Quizás ayudando a despertar el talento de las mentes dormidas.`,
 
   volunteer: {
     title: 'Plan de Voluntariado',
+    heroImage: 'http://elgritodelanaturaleza.com/wp-content/uploads/2021/08/pexels-photo-3014826-scaled.jpg',
     description: `El proyecto documental EL GRITO promueve el voluntariado desde una visión colaborativa. En colaboración con la Asociación Amseld, nos comprometemos a dar la oportunidad a los voluntarios para desarrollar sus capacidades e involucrarse en varias temáticas, a través de su labor diaria en nuestras áreas de trabajo.
 
 EL GRITO busca personas comprometidas que se identifiquen con su misión y valores para apoyar con sus habilidades y energía en la implementación de sus proyectos.`,
     mission: 'Apoyar y dar seguimiento a las iniciativas estratégicas, proyectos especiales de marketing y a la gestión de procesos administrativos.',
+    howToParticipate: 'Para ser parte del grupo de voluntarios/as de EL GRITO todo lo que tienes que hacer es:',
     requirements: [
       'Compromiso, proactividad y capacidad de trabajo en equipo',
       'Habilidades interpersonales, organizativas y de recopilación de información',
@@ -108,6 +110,14 @@ EL GRITO busca personas comprometidas que se identifiquen con su misión y valor
       'Gestión de Redes Sociales',
       'Apoyo y asistencia en diversas actividades',
     ],
+    functions: [
+      'Monitorear las diferentes redes sociales de EL GRITO.',
+      'Apoyar en la gestión táctica de los diferentes planes de marketing previstos en el área.',
+      'Apoyar en la implementación de la estrategia de comunicación, para las diferentes campañas en la página web.',
+      'Apoyo en el desarrollo de proyectos especiales del área.',
+      'Realizar otras actividades inherentes al cargo encomendadas por su jefe inmediato.',
+    ],
+    materials: 'El voluntario seleccionado deberá contar con su propio ordenador personal para el desarrollo de las actividades de voluntariado.',
     benefits: [
       'Experiencia laboral relacionada con Administración, Gestión, Comunicación y Marketing',
       'Conocimiento sobre la elaboración de un proyecto documental',
@@ -119,6 +129,7 @@ EL GRITO busca personas comprometidas que se identifiquen con su misión y valor
       'Participación en actividades relacionadas con su área de trabajo (viajes, eventos etc.)',
       'Certificado al término del voluntariado',
     ],
+    contactText: 'Si tienes interés en formar parte de nuestro equipo de voluntarios, ¡escríbenos!',
     note: 'La designación como voluntario/a no conlleva relación laboral ni de servicios profesionales con EL GRITO así como derecho de remuneración ni reconocimiento económico de ningún tipo. El voluntariado no cubre seguro médico.',
   },
 
@@ -235,7 +246,7 @@ Todos los productos deben ser sostenibles.`,
       label: 'Equipo',
       children: [
         { label: 'Integrantes', path: '/equipo' },
-        { label: 'Apoyo Científico', path: '/colaboradores' },
+        { label: 'Apoyo Científico', path: '/apoyo-cientifico' },
         { label: 'Carta de la directora', path: '/carta-directora' },
       ],
     },
@@ -250,6 +261,6 @@ Todos los productos deben ser sostenibles.`,
       ],
     },
     { label: 'Galería', path: '/galeria' },
-    { label: 'Contacto', path: '/contacto' },
+    { label: 'Contacto', path: '#contacto' },
   ],
 };

@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { siteContent } from '../../data/content';
+import { ContactModal } from '../ContactModal/ContactModal';
 import styles from './Header.module.css';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [contactModalOpen, setContactModalOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -18,6 +20,33 @@ export function Header() {
   const handleLinkClick = () => {
     setMobileMenuOpen(false);
     setOpenDropdown(null);
+  };
+
+  const handleContactClick = () => {
+    setContactModalOpen(true);
+    handleLinkClick();
+  };
+
+  const renderNavItem = (path: string, label: string, className: string) => {
+    if (path === '#contacto') {
+      return (
+        <button
+          className={className}
+          onClick={() => { handleContactClick(); }}
+        >
+          {label}
+        </button>
+      );
+    }
+    return (
+      <Link
+        to={path}
+        className={`${className} ${isActive(path) ? styles.active : ''}`}
+        onClick={handleLinkClick}
+      >
+        {label}
+      </Link>
+    );
   };
 
   return (
@@ -60,31 +89,24 @@ export function Header() {
                     >
                       {item.children.map((child) => (
                         <li key={child.path}>
-                          <Link
-                            to={child.path}
-                            className={`${styles.dropdownLink} ${isActive(child.path) ? styles.active : ''}`}
-                            onClick={handleLinkClick}
-                          >
-                            {child.label}
-                          </Link>
+                          {renderNavItem(child.path, child.label, styles.dropdownLink)}
                         </li>
                       ))}
                     </ul>
                   </>
                 ) : (
-                  <Link
-                    to={item.path}
-                    className={`${styles.navLink} ${isActive(item.path) ? styles.active : ''}`}
-                    onClick={handleLinkClick}
-                  >
-                    {item.label}
-                  </Link>
+                  renderNavItem(item.path, item.label, styles.navLink)
                 )}
               </li>
             ))}
           </ul>
         </nav>
       </div>
+
+      <ContactModal
+        isOpen={contactModalOpen}
+        onClose={() => setContactModalOpen(false)}
+      />
     </header>
   );
 }

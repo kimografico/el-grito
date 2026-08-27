@@ -1,0 +1,14 @@
+.scientificSupport {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}

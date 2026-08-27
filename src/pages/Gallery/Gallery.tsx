@@ -5,7 +5,7 @@ import styles from './Gallery.module.css';
 export function Gallery() {
   return (
     <div className={styles.gallery}>
-      <Hero title="Galería" subtitle="¡La Tierra te necesita!" />
+      <Hero title="Galería" image="/images/decorative/antique-map-background.jpg" />
 
       <section className={styles.section}>
         <div className="container">
