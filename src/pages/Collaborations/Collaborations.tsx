@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { img } from '../../config/constants';
 import { Hero } from '../../components/Hero/Hero';
 import { useTranslation } from '../../locales/context';
 import { scientists } from '../../data/scientists';
@@ -11,7 +12,7 @@ export function Collaborations() {
     <div className={styles.collaborations}>
       <Hero
         title={ts('collaborations.title')}
-        image="/images/decorative/pexels-scientist.jpg"
+        image={img('/images/decorative/pexels-scientist.jpg')}
       />
 
       <section className="section">
@@ -23,7 +24,7 @@ export function Collaborations() {
           </div>
 
           <div className={styles.disasterImage}>
-            <img src="/images/decorative/disaster.png" alt={ts('pages.altDesastre')} />
+            <img src={img('/images/decorative/disaster.png')} alt={ts('pages.altDesastre')} />
           </div>
 
           <div className={styles.specialties}>
@@ -38,7 +39,7 @@ export function Collaborations() {
           </div>
 
           <div className={styles.collabImage}>
-            <img src="/images/decorative/scientist-collab.jpg" alt={ts('pages.altCientificosColaborando')} />
+            <img src={img('/images/decorative/scientist-collab.jpg')} alt={ts('pages.altCientificosColaborando')} />
           </div>
 
           <div className={styles.callToAction}>

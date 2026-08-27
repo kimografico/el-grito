@@ -1,3 +1,4 @@
+import { img } from '../../config/constants';
 import { useTranslation } from '../../locales/context';
 import styles from './DirectorLetter.module.css';
 
@@ -8,7 +9,7 @@ export function DirectorLetter() {
     <div className={styles.letter}>
       <section
         className={styles.parallaxQuote}
-        style={{ backgroundImage: 'url(/images/decorative/laguna-grande.png)' }}
+        style={{ backgroundImage: `url(${img('/images/decorative/laguna-grande.png')})` }}
       >
         <div className={styles.parallaxOverlay}>
           <blockquote className={styles.parallaxText}>

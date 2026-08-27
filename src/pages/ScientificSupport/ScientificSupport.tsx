@@ -1,3 +1,4 @@
+import { img } from '../../config/constants';
 import { Hero } from '../../components/Hero/Hero';
 import { OrganizationCard } from '../../components/OrganizationCard/OrganizationCard';
 import { organizations } from '../../data/organizations';
@@ -11,7 +12,7 @@ export function ScientificSupport() {
     <div className={styles.scientificSupport}>
       <Hero
         title={ts('pages.scientificSupportTitle')}
-        image="/images/decorative/pexels-scientist.jpg"
+        image={img('/images/decorative/pexels-scientist.jpg')}
       />
 
       <section className="section">

@@ -1,3 +1,4 @@
+import { img } from '../../config/constants';
 import { useTranslation } from '../../locales/context';
 import styles from './Hero.module.css';
 
@@ -20,7 +21,7 @@ export function Hero({ title, subtitle, image, showLogo = false }: HeroProps) {
         <div className={styles.content}>
           {showLogo && (
             <img
-              src="/images/logo/logo-full.png"
+              src={img('/images/logo/logo-full.png')}
               alt={ts('global.siteName')}
               className={styles.logo}
             />

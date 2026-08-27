@@ -1,3 +1,4 @@
+import { img } from '../../config/constants';
 import { Hero } from '../../components/Hero/Hero';
 import { Accordion } from '../../components/Accordion/Accordion';
 import { useTranslation } from '../../locales/context';
@@ -54,14 +55,14 @@ export function Sponsors() {
     <div className={styles.sponsors}>
       <Hero
         title={ts('sponsors.heroTitle')}
-        image="/images/decorative/antique-map-background.jpg"
+        image={img('/images/decorative/antique-map-background.jpg')}
       />
 
       <section className="section">
         <div className="container">
           <div className={styles.header}>
             <h1 className={styles.title}>{ts('sponsors.title')}</h1>
-            <img src="/images/logo/logo-full.png" alt={ts('global.siteName')} className={styles.logo} />
+            <img src={img('/images/logo/logo-full.png')} alt={ts('global.siteName')} className={styles.logo} />
           </div>
 
           <div className={styles.introText}>
@@ -127,7 +128,7 @@ export function Sponsors() {
                 </div>
                 <div className={styles.tierContent}>
                   <img
-                    src={`/images/sponsors/${tier.id}.png`}
+                    src={img(`/images/sponsors/${tier.id}.png`)}
                     alt={tier.name}
                     className={styles.tierIcon}
                   />

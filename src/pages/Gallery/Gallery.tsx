@@ -1,3 +1,4 @@
+import { img } from '../../config/constants';
 import { Hero } from '../../components/Hero/Hero';
 import { InstagramGallery } from '../../components/InstagramGallery/InstagramGallery';
 import { useTranslation } from '../../locales/context';
@@ -8,7 +9,7 @@ export function Gallery() {
 
   return (
     <div className={styles.gallery}>
-      <Hero title={ts('pages.galleryTitle')} image="/images/decorative/antique-map-background.jpg" />
+      <Hero title={ts('pages.galleryTitle')} image={img('/images/decorative/antique-map-background.jpg')} />
 
       <section className="section">
         <div className="container">

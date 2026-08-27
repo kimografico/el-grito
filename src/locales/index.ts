@@ -29,41 +29,62 @@ import scientistBiosEnRaw from './en/scientists-bios.yml?raw';
 import organizationsEsRaw from './es/organizations.yml?raw';
 import organizationsEnRaw from './en/organizations.yml?raw';
 
+const base = import.meta.env.BASE_URL;
+
 function parseYaml(raw: string): Record<string, unknown> {
   return load(raw) as Record<string, unknown>;
 }
 
+function rewriteImagePaths(obj: unknown): unknown {
+  if (typeof obj === 'string' && obj.startsWith('/images/')) {
+    return `${base}${obj.slice(1)}`;
+  }
+  if (Array.isArray(obj)) {
+    return obj.map(rewriteImagePaths);
+  }
+  if (obj && typeof obj === 'object') {
+    return Object.fromEntries(
+      Object.entries(obj).map(([key, value]) => [key, rewriteImagePaths(value)])
+    );
+  }
+  return obj;
+}
+
+function parseAndRewrite(raw: string): Record<string, unknown> {
+  return rewriteImagePaths(parseYaml(raw)) as Record<string, unknown>;
+}
+
 export const messages = {
   es: {
-    ...parseYaml(globalEsRaw),
-    ...parseYaml(navigationEsRaw),
-    ...parseYaml(homeEsRaw),
-    ...parseYaml(directorLetterEsRaw),
-    ...parseYaml(volunteerEsRaw),
-    ...parseYaml(collaborationsEsRaw),
-    ...parseYaml(sponsorsEsRaw),
-    ...parseYaml(pagesEsRaw),
-    ...parseYaml(contactEsRaw),
-    ...parseYaml(sponsorTiersEsRaw),
-    ...parseYaml(rolesEsRaw),
-    ...parseYaml(teamBiosEsRaw),
-    ...parseYaml(scientistBiosEsRaw),
-    ...parseYaml(organizationsEsRaw),
+    ...parseAndRewrite(globalEsRaw),
+    ...parseAndRewrite(navigationEsRaw),
+    ...parseAndRewrite(homeEsRaw),
+    ...parseAndRewrite(directorLetterEsRaw),
+    ...parseAndRewrite(volunteerEsRaw),
+    ...parseAndRewrite(collaborationsEsRaw),
+    ...parseAndRewrite(sponsorsEsRaw),
+    ...parseAndRewrite(pagesEsRaw),
+    ...parseAndRewrite(contactEsRaw),
+    ...parseAndRewrite(sponsorTiersEsRaw),
+    ...parseAndRewrite(rolesEsRaw),
+    ...parseAndRewrite(teamBiosEsRaw),
+    ...parseAndRewrite(scientistBiosEsRaw),
+    ...parseAndRewrite(organizationsEsRaw),
   },
   en: {
-    ...parseYaml(globalEnRaw),
-    ...parseYaml(navigationEnRaw),
-    ...parseYaml(homeEnRaw),
-    ...parseYaml(directorLetterEnRaw),
-    ...parseYaml(volunteerEnRaw),
-    ...parseYaml(collaborationsEnRaw),
-    ...parseYaml(sponsorsEnRaw),
-    ...parseYaml(pagesEnRaw),
-    ...parseYaml(contactEnRaw),
-    ...parseYaml(sponsorTiersEnRaw),
-    ...parseYaml(rolesEnRaw),
-    ...parseYaml(teamBiosEnRaw),
-    ...parseYaml(scientistBiosEnRaw),
-    ...parseYaml(organizationsEnRaw),
+    ...parseAndRewrite(globalEnRaw),
+    ...parseAndRewrite(navigationEnRaw),
+    ...parseAndRewrite(homeEnRaw),
+    ...parseAndRewrite(directorLetterEnRaw),
+    ...parseAndRewrite(volunteerEnRaw),
+    ...parseAndRewrite(collaborationsEnRaw),
+    ...parseAndRewrite(sponsorsEnRaw),
+    ...parseAndRewrite(pagesEnRaw),
+    ...parseAndRewrite(contactEnRaw),
+    ...parseAndRewrite(sponsorTiersEnRaw),
+    ...parseAndRewrite(rolesEnRaw),
+    ...parseAndRewrite(teamBiosEnRaw),
+    ...parseAndRewrite(scientistBiosEnRaw),
+    ...parseAndRewrite(organizationsEnRaw),
   },
 };

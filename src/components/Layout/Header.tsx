@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { img } from '../../config/constants';
 import { useTranslation } from '../../locales/context';
 import { ContactModal } from '../ContactModal/ContactModal';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
@@ -64,7 +65,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={handleLinkClick}>
-          <img src="/images/logo/logo.png" alt={siteName} />
+          <img src={img('/images/logo/logo.png')} alt={siteName} />
         </Link>
 
         <button

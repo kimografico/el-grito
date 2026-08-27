@@ -1,3 +1,4 @@
+import { img } from '../../config/constants';
 import { Hero } from '../../components/Hero/Hero';
 import { useTranslation } from '../../locales/context';
 import styles from './Home.module.css';
@@ -7,7 +8,7 @@ export function Home() {
 
   return (
     <div className={styles.home}>
-      <Hero showLogo image="/images/decorative/antique-map-background.jpg" />
+      <Hero showLogo image={img('/images/decorative/antique-map-background.jpg')} />
 
       <section className="section">
         <div className="container">
@@ -28,7 +29,7 @@ export function Home() {
             </div>
             <div className={styles.columnImage}>
               <img
-                src="/images/decorative/mono-ardilla.png"
+                src={img('/images/decorative/mono-ardilla.png')}
                 alt={ts('pages.altMonoArdilla')}
                 className={styles.shadowImage}
               />
@@ -39,7 +40,7 @@ export function Home() {
 
       <section
         className={styles.parallaxQuote}
-        style={{ backgroundImage: 'url(/images/decorative/volcan-cotopaxi-painting.jpg)' }}
+        style={{ backgroundImage: `url(${img('/images/decorative/volcan-cotopaxi-painting.jpg')})` }}
       >
         <div className={styles.parallaxOverlay}>
           <blockquote className={styles.parallaxText}>
@@ -87,7 +88,7 @@ export function Home() {
 
       <section
         className={styles.parallaxQuote}
-        style={{ backgroundImage: 'url(/images/decorative/nature-landscape-parallax.jpg)' }}
+        style={{ backgroundImage: `url(${img('/images/decorative/nature-landscape-parallax.jpg')})` }}
       >
         <div className={styles.parallaxOverlay}>
           <blockquote className={styles.parallaxText}>

@@ -1,3 +1,5 @@
+import { img } from '../config/constants';
+
 export interface SponsorTier {
   id: string;
   name: string;
@@ -11,7 +13,7 @@ export const sponsorTiers: SponsorTier[] = [
   {
     id: 'tierra',
     name: 'TIERRA',
-    icon: '/images/sponsors/tierra.jpg',
+    icon: img('/images/sponsors/tierra.jpg'),
     description: 'Entidades o particulares que aportan donaciones económicas, o productos que apoyen a la producción del documental que tengan un valor a partir de los 5000$',
     amount: 'Desde $5,000',
     benefits: [
@@ -26,7 +28,7 @@ export const sponsorTiers: SponsorTier[] = [
   {
     id: 'agua',
     name: 'AGUA',
-    icon: '/images/sponsors/agua.jpg',
+    icon: img('/images/sponsors/agua.jpg'),
     description: 'Entidades o particulares, que aportan donaciones económicas de más de $2500 para la producción',
     amount: 'Desde $2,500',
     benefits: [
@@ -40,7 +42,7 @@ export const sponsorTiers: SponsorTier[] = [
   {
     id: 'fuego',
     name: 'FUEGO',
-    icon: '/images/sponsors/fuego.jpg',
+    icon: img('/images/sponsors/fuego.jpg'),
     description: 'Entidades o particulares, que aportan donaciones económicas de más de $1000 para la producción',
     amount: 'Desde $1,000',
     benefits: [
@@ -52,7 +54,7 @@ export const sponsorTiers: SponsorTier[] = [
   {
     id: 'metal',
     name: 'METAL',
-    icon: '/images/sponsors/metal.jpg',
+    icon: img('/images/sponsors/metal.jpg'),
     description: 'Entidades o particulares, que aportan donaciones económicas de más de $500 para la producción',
     amount: 'Desde $500',
     benefits: [
@@ -64,7 +66,7 @@ export const sponsorTiers: SponsorTier[] = [
   {
     id: 'madera',
     name: 'MADERA',
-    icon: '/images/sponsors/madera.jpg',
+    icon: img('/images/sponsors/madera.jpg'),
     description: 'Entidades o particulares, que aportan donaciones económicas de más de $250 para la producción',
     amount: 'Desde $250',
     benefits: [
