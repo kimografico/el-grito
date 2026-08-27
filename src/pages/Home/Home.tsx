@@ -29,7 +29,7 @@ export function Home() {
             <div className={styles.columnImage}>
               <img
                 src="/images/decorative/mono-ardilla.png"
-                alt="Mono Ardilla"
+                alt={ts('pages.altMonoArdilla')}
                 className={styles.shadowImage}
               />
             </div>

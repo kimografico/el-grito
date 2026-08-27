@@ -1,3 +1,4 @@
+import { useTranslation } from '../../locales/context';
 import styles from './Hero.module.css';
 
 interface HeroProps {
@@ -8,6 +9,8 @@ interface HeroProps {
 }
 
 export function Hero({ title, subtitle, image, showLogo = false }: HeroProps) {
+  const { ts } = useTranslation();
+
   return (
     <section
       className={styles.hero}
@@ -18,7 +21,7 @@ export function Hero({ title, subtitle, image, showLogo = false }: HeroProps) {
           {showLogo && (
             <img
               src="/images/logo/logo-full.png"
-              alt="El Grito"
+              alt={ts('global.siteName')}
               className={styles.logo}
             />
           )}

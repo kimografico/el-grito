@@ -23,7 +23,7 @@ export function Collaborations() {
           </div>
 
           <div className={styles.disasterImage}>
-            <img src="/images/decorative/disaster.png" alt="Desastre" />
+            <img src="/images/decorative/disaster.png" alt={ts('pages.altDesastre')} />
           </div>
 
           <div className={styles.specialties}>
@@ -38,7 +38,7 @@ export function Collaborations() {
           </div>
 
           <div className={styles.collabImage}>
-            <img src="/images/decorative/scientist-collab.jpg" alt="Científicos colaborando" />
+            <img src="/images/decorative/scientist-collab.jpg" alt={ts('pages.altCientificosColaborando')} />
           </div>
 
           <div className={styles.callToAction}>

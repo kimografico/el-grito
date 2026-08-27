@@ -61,7 +61,7 @@ export function Sponsors() {
         <div className="container">
           <div className={styles.header}>
             <h1 className={styles.title}>{ts('sponsors.title')}</h1>
-            <img src="/images/logo/logo-full.png" alt="El Grito" className={styles.logo} />
+            <img src="/images/logo/logo-full.png" alt={ts('global.siteName')} className={styles.logo} />
           </div>
 
           <div className={styles.introText}>
