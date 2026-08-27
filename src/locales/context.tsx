@@ -1,5 +1,4 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
-import { IntlProvider } from 'react-intl';
 import { messages } from './index';
 
 export type Locale = 'es' | 'en';
@@ -11,7 +10,7 @@ interface LocaleContextValue {
   ts: (key: string) => string;
 }
 
-const LocaleContext = createContext<LocaleContextValue>(undefined!);
+const LocaleContext = createContext<LocaleContextValue | null>(null);
 
 function getNestedValue(obj: Record<string, unknown>, path: string): unknown {
   const keys = path.split('.');
@@ -53,13 +52,9 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
     return typeof val === 'string' ? val : String(val);
   }, [locale]);
 
-  const intlMessages = messages[locale] as Record<string, string>;
-
   return (
     <LocaleContext.Provider value={{ locale, setLocale, t, ts }}>
-      <IntlProvider locale={locale} messages={intlMessages}>
-        {children}
-      </IntlProvider>
+      {children}
     </LocaleContext.Provider>
   );
 }

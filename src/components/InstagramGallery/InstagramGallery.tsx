@@ -1,4 +1,5 @@
 import { useTranslation } from '../../locales/context';
+import { INSTAGRAM_USERNAME } from '../../config/constants';
 import styles from './InstagramGallery.module.css';
 
 export function InstagramGallery() {
@@ -8,16 +9,15 @@ export function InstagramGallery() {
     <div className={styles.container}>
       <div className={styles.embedWrapper}>
         <iframe
-          src="https://www.instagram.com/el_grito_de_la_naturaleza/embed/"
+          src={`https://www.instagram.com/${INSTAGRAM_USERNAME}/embed/`}
           className={styles.iframe}
           title="Instagram Gallery"
           frameBorder="0"
           scrolling="no"
-          allowTransparency={true}
         />
       </div>
       <a
-        href="https://www.instagram.com/el_grito_de_la_naturaleza/"
+        href={`https://www.instagram.com/${INSTAGRAM_USERNAME}/`}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.followLink}

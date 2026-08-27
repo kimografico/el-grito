@@ -1,17 +1,19 @@
 import { createBrowserRouter } from 'react-router-dom';
+import { lazy } from 'react';
 import { Layout } from './components/Layout/Layout';
-import { Home } from './pages/Home/Home';
-import { Team } from './pages/Team/Team';
-import { MemberDetail } from './pages/MemberDetail/MemberDetail';
-import { ScientistDetail } from './pages/MemberDetail/ScientistDetail';
-import { DirectorLetter } from './pages/DirectorLetter/DirectorLetter';
-import { Collaborations } from './pages/Collaborations/Collaborations';
-import { ScientificSupport } from './pages/ScientificSupport/ScientificSupport';
-import { Artists } from './pages/Artists/Artists';
-import { Scientists } from './pages/Scientists/Scientists';
-import { Sponsors } from './pages/Sponsors/Sponsors';
-import { Volunteer } from './pages/Volunteer/Volunteer';
-import { Gallery } from './pages/Gallery/Gallery';
+
+const Home = lazy(() => import('./pages/Home/Home').then(m => ({ default: m.Home })));
+const Team = lazy(() => import('./pages/Team/Team').then(m => ({ default: m.Team })));
+const PersonDetail = lazy(() => import('./pages/MemberDetail/PersonDetail').then(m => ({ default: m.PersonDetail })));
+const DirectorLetter = lazy(() => import('./pages/DirectorLetter/DirectorLetter').then(m => ({ default: m.DirectorLetter })));
+const Collaborations = lazy(() => import('./pages/Collaborations/Collaborations').then(m => ({ default: m.Collaborations })));
+const ScientificSupport = lazy(() => import('./pages/ScientificSupport/ScientificSupport').then(m => ({ default: m.ScientificSupport })));
+const Artists = lazy(() => import('./pages/Artists/Artists').then(m => ({ default: m.Artists })));
+const Scientists = lazy(() => import('./pages/Scientists/Scientists').then(m => ({ default: m.Scientists })));
+const Sponsors = lazy(() => import('./pages/Sponsors/Sponsors').then(m => ({ default: m.Sponsors })));
+const Volunteer = lazy(() => import('./pages/Volunteer/Volunteer').then(m => ({ default: m.Volunteer })));
+const Gallery = lazy(() => import('./pages/Gallery/Gallery').then(m => ({ default: m.Gallery })));
+const NotFound = lazy(() => import('./pages/NotFound/NotFound').then(m => ({ default: m.NotFound })));
 
 export const router = createBrowserRouter([
   {
@@ -20,8 +22,8 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'equipo', element: <Team /> },
-      { path: 'equipo/:slug', element: <MemberDetail /> },
-      { path: 'cientifico/:slug', element: <ScientistDetail /> },
+      { path: 'equipo/:slug', element: <PersonDetail /> },
+      { path: 'cientifico/:slug', element: <PersonDetail /> },
       { path: 'carta-directora', element: <DirectorLetter /> },
       { path: 'colaboradores', element: <Collaborations /> },
       { path: 'apoyo-cientifico', element: <ScientificSupport /> },
@@ -30,6 +32,7 @@ export const router = createBrowserRouter([
       { path: 'patrocinio', element: <Sponsors /> },
       { path: 'voluntariado', element: <Volunteer /> },
       { path: 'galeria', element: <Gallery /> },
+      { path: '*', element: <NotFound /> },
     ],
   },
 ]);

@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.section {
-  padding: var(--space-3xl) 0;
-}
-
 .backLink {
   display: inline-block;
   margin-bottom: var(--space-xl);
@@ -61,6 +57,13 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
   margin-bottom: var(--space-xl);
+}
+
+.location {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
 }
 
 .bio {

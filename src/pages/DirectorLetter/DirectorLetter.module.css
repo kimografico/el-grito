@@ -40,10 +40,6 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.section {
-  padding: var(--space-3xl) 0;
-}
-
 .paper {
   max-width: 800px;
   margin: 0 auto;

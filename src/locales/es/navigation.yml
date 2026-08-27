@@ -12,7 +12,7 @@ navigation:
         - label: "Carta de la directora"
           path: "/carta-directora"
     - label: "Colaboraciones"
-      path: "/colaboraciones"
+      path: "/colaboradores"
       children:
         - label: "Empresas"
           path: "/patrocinio"

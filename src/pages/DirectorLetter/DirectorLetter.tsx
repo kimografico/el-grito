@@ -17,7 +17,7 @@ export function DirectorLetter() {
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className="section">
         <div className="container">
           <div className={styles.paper}>
             <h1 className={styles.title}>{ts('directorLetter.title')}</h1>

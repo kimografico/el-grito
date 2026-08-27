@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.section {
-  padding: var(--space-3xl) 0;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -124,26 +120,6 @@
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-lg);
   text-align: justify;
-}
-
-.testButton {
-  display: block;
-  width: 100%;
-  padding: var(--space-md) var(--space-xl);
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-inverse);
-  background-color: var(--color-primary);
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  text-align: center;
-  transition: background-color var(--transition-fast);
-}
-
-.testButton:hover {
-  background-color: var(--color-primary-light);
-  color: var(--color-text-inverse);
 }
 
 .legislation {

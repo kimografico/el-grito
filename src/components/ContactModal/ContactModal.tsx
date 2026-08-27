@@ -1,4 +1,5 @@
 import { useTranslation } from '../../locales/context';
+import { CONTACT_EMAIL } from '../../config/constants';
 import styles from './ContactModal.module.css';
 
 interface ContactModalProps {
@@ -31,14 +32,14 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         </p>
 
         <a
-          href="mailto:info@elgritodelanaturaleza.com"
+          href={`mailto:${CONTACT_EMAIL}`}
           className={styles.email}
         >
-          info@elgritodelanaturaleza.com
+          {CONTACT_EMAIL}
         </a>
 
         <a
-          href="mailto:info@elgritodelanaturaleza.com"
+          href={`mailto:${CONTACT_EMAIL}`}
           className={styles.button}
         >
           {ts('contact.modalSendEmail')}

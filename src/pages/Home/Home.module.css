@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.section {
-  padding: var(--space-3xl) 0;
-}
-
 .twoColumns {
   display: grid;
   grid-template-columns: 1fr 1fr;

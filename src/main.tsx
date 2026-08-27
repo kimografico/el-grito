@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { LocaleProvider } from './locales/context';
@@ -8,7 +8,9 @@ import './styles/global.css';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <LocaleProvider>
-      <RouterProvider router={router} />
+      <Suspense>
+        <RouterProvider router={router} />
+      </Suspense>
     </LocaleProvider>
   </StrictMode>,
 );

@@ -9,7 +9,7 @@ export function Volunteer() {
     <div className={styles.volunteer}>
       <Hero title={ts('volunteer.title')} image={ts('volunteer.heroImage')} />
 
-      <section className={styles.section}>
+      <section className="section">
         <div className="container">
           <div className={styles.intro}>
             {ts('volunteer.description').split('\n\n').map((paragraph, index) => (

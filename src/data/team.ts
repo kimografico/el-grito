@@ -47,7 +47,7 @@ export const artists: TeamMember[] = [
   },
 ];
 
-export function getAllMembers(): TeamMember[] {
+function getAllMembers(): TeamMember[] {
   return [...teamMembers, ...artists];
 }
 

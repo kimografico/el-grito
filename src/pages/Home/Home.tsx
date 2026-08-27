@@ -9,7 +9,7 @@ export function Home() {
     <div className={styles.home}>
       <Hero showLogo image="/images/decorative/antique-map-background.jpg" />
 
-      <section className={styles.section}>
+      <section className="section">
         <div className="container">
           <div className={styles.twoColumns}>
             <div className={styles.columnText}>

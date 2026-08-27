@@ -14,7 +14,7 @@ export function Collaborations() {
         image="/images/decorative/pexels-scientist.jpg"
       />
 
-      <section className={styles.section}>
+      <section className="section">
         <div className="container">
           <div className={styles.introText}>
             {ts('collaborations.description').split('\n\n').map((paragraph, index) => (

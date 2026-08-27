@@ -10,7 +10,7 @@ export function Gallery() {
     <div className={styles.gallery}>
       <Hero title={ts('pages.galleryTitle')} image="/images/decorative/antique-map-background.jpg" />
 
-      <section className={styles.section}>
+      <section className="section">
         <div className="container">
           <InstagramGallery />
         </div>

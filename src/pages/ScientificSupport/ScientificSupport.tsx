@@ -14,7 +14,7 @@ export function ScientificSupport() {
         image="/images/decorative/pexels-scientist.jpg"
       />
 
-      <section className={styles.section}>
+      <section className="section">
         <div className="container">
           <div className={styles.grid}>
             {organizations.map((organization) => (

@@ -57,7 +57,7 @@ export function Sponsors() {
         image="/images/decorative/antique-map-background.jpg"
       />
 
-      <section className={styles.section}>
+      <section className="section">
         <div className="container">
           <div className={styles.header}>
             <h1 className={styles.title}>{ts('sponsors.title')}</h1>
@@ -99,9 +99,6 @@ export function Sponsors() {
               ))}
             </div>
 
-            {/* <a href="#" className={styles.testButton}>
-              {ts('sponsors.testButton')}
-            </a> */}
           </div>
 
           <div className={styles.legislation}>
