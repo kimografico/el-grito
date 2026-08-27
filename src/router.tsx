@@ -15,11 +15,12 @@ const Volunteer = lazy(() => import('./pages/Volunteer/Volunteer').then(m => ({ 
 const Gallery = lazy(() => import('./pages/Gallery/Gallery').then(m => ({ default: m.Gallery })));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound').then(m => ({ default: m.NotFound })));
 
-export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
+export const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
       { index: true, element: <Home /> },
       { path: 'equipo', element: <Team /> },
       { path: 'equipo/:slug', element: <PersonDetail /> },
@@ -35,4 +36,8 @@ export const router = createBrowserRouter([
       { path: '*', element: <NotFound /> },
     ],
   },
-]);
+  ],
+  {
+    basename: import.meta.env.BASE_URL,
+  }
+);
